@@ -1,5 +1,8 @@
 # CM523Website
 
+*USE index.html ONLY for HTML*
+*vaccine.html is only intital commit with same basic structure as index.html
+
 04/05-13: Prototype and Design Doc
 Yuka: basic strucutre of HTML and design CSS
 Kim-Sarah: add content to HTML and write design doc
