@@ -1,0 +1,35 @@
+
+@font-face {
+    font-family: "Apercu"; src: url("//db.onlinewebfonts.com/t/0a086e32e41c5e5960b26626757f07f3.eot"); src: url("//db.onlinewebfonts.com/t/0a086e32e41c5e5960b26626757f07f3.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0a086e32e41c5e5960b26626757f07f3.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0a086e32e41c5e5960b26626757f07f3.woff") format("woff"), url("//db.onlinewebfonts.com/t/0a086e32e41c5e5960b26626757f07f3.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0a086e32e41c5e5960b26626757f07f3.svg#Apercu") format("svg"); }
+
+@import url(//db.onlinewebfonts.com/c/9dc05d7f8e2ef50502fce661077085b5?family=Muro);
+
+
+header .logo {
+    width: 30%;
+    height: 30%;
+    margin: 30px;
+    padding-top: 20px;
+}
+
+body {
+    background-color:bisque; 
+    margin: auto;
+    font-family: "Apercu";
+}
+
+h1 {
+    font-family: "Muro", Arial, Helvetica, sans-serif;
+    font-size: 4em;
+    color: #448bca;
+}
+
+h3 {
+    font-family: "Muro", Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: #9ACEE6;
+}
+
+p {
+    color: #192c58;
+}
