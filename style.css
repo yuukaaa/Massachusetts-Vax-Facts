@@ -4,32 +4,259 @@
 
 @import url(//db.onlinewebfonts.com/c/9dc05d7f8e2ef50502fce661077085b5?family=Muro);
 
+html, body {
+    height: 100%;
+}
+
+header {
+    margin: auto;
+}
 
 header .logo {
-    width: 30%;
-    height: 30%;
-    margin: 30px;
-    padding-top: 20px;
+    width: 40%;
+    height: 40%;
+    position: fixed;  
+    overflow-x: hidden;
+    display: block;
 }
 
 body {
-    background-color:bisque; 
-    margin: auto;
-    font-family: "Apercu";
+    background-color:aliceblue; 
+    margin: 5em;
+    font-family: "Apercu", sans-serif;
+    display: block;
+}
+
+nav {
+    background-color: white;
+    border: solid 3px #192c58;
+    box-shadow: 5px 10px #192c58;
+    margin-top: 10em;
+    padding: 5px;
+    height: 400px;
+    width: 20%;
+    position: fixed; 
+    overflow-x: hidden;
+}
+
+nav ul > li {
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: left;
+    margin-top: 2em; 
+    justify-content: left;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+a {
+    color: #192c58;
+    text-decoration: underline coral;
+    text-underline-offset: 2px;
+}
+
+a:hover {
+    color:coral;
+}
+
+main {
+    margin-left: 30%;
+    display: block;
+    padding-bottom: 2.5rem;
+}
+
+main #siteinfo {
+    font-size: 15px;
+    background-color: #9ACEE6;
+    border: solid 3px #192c58;
+    box-shadow: 5px 10px #192c58;
+    padding: 1em;
+    margin-bottom: 3em;
+    height: 4em;
+    display: flex;
+    flex-wrap: row wrap;
+    align-items: center;
+}
+
+main div {
+    padding: 1em;
 }
 
 h1 {
     font-family: "Muro", Arial, Helvetica, sans-serif;
     font-size: 4em;
     color: #448bca;
+    margin-bottom: 10px;
 }
 
 h3 {
     font-family: "Muro", Arial, Helvetica, sans-serif;
     font-size: 2em;
     color: #9ACEE6;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 1em;
+    font-weight: 900;
+    line-height: 1.5em;
+    color: #448bca;
+    margin-top: 2em;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-underline-offset: 3px;
 }
 
 p {
     color: #192c58;
+    line-height: 2em;
+}
+
+table tr {
+    background-color: white;
+    border: solid 3px #192c58;
+    box-shadow: 5px 10px #192c58;
+    margin-bottom: 2em;
+    margin-top: 1em;
+    padding: 1.5em;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    line-height: 1.5em;
+}
+
+#vaxname a {
+    font-family: "Muro", Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: #9ACEE6;
+    text-decoration: none;
+}
+
+#vaxname a:hover, button a:hover {
+    color:coral;
+}
+
+button {
+    background-color:white;
+    border: solid 2px #192c58;
+    box-shadow: 3px 3px #192c58;
+    padding: 15px;
+    font-family: "Apercu", sans-serif;
+    font-size: medium;
+}
+
+button a {
+    text-decoration: none;
+}
+
+#eligibility ul > li, #FAQs ul > li {
+    line-height: 2em;
+    color: #192c58;
+}
+
+footer {
+    margin-left: 30%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+footer div {
+    background-color: #9ACEE6;
+    border: solid 3px #192c58;
+    box-shadow: 5px 10px #192c58;
+    padding: 5px;
+    margin-bottom: 3em;
+    height: 3em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    align-content: center;
+}
+
+footer #class {
+    float: left;
+    width: 40%;
+    font-size: 15px;
+}
+
+footer #creators {
+    float: right;
+    width: 40%;
+    font-size: 15px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 480px){
+    header .logo {
+        width: 50%;
+        height: auto;
+        margin: 10px;
+        top: 0;
+        position: absolute;
+        left:0;
+        top:0;
+    }
+
+    nav {
+        box-shadow: 5px 5px #192c58;
+        margin-top: 10px;
+        margin-left: 4em;
+        top: 0;
+        width: max-content;
+        height: max-content;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    nav ul > li {
+        flex-flow: row wrap;
+        justify-content: space-between;
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    h4 {
+        font-size: 1em;
+    }
+    
+    main {
+        margin: auto;
+    }
+    
+    main #siteinfo {
+        box-shadow: 5px 5px #192c58;
+        font-size: 15px;
+        height: auto;
+        margin-top: 9em;
+        margin-bottom: 1.5em;
+    }
+    
+    footer {
+        margin: 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer #class, footer #creators {
+        font-size: 14px;
+        height: max-content;
+        margin: 0 0 2em 0;
+        width: 100%;
+    }
 }
