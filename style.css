@@ -264,9 +264,9 @@ footer a {
   
     .openbtn {
       font-size: 18px;
-      background-color: white;
-      color: #192c58;
-      border-color: #192c58;
+      background-color: #192c58;
+      color: white;
+      box-shadow: none;
       padding: 10px 25px;
       border: none;
       position: fixed;
