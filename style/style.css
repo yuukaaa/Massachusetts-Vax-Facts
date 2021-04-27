@@ -13,10 +13,11 @@ header {
 
 header .logo {
     width: 40%;
-    height: 40%;
+    height: auto;
     position: fixed;  
     overflow-x: hidden;
     display: block;
+    margin-left: 0;
 }
 
 body {
@@ -75,10 +76,11 @@ main #siteinfo {
     box-shadow: 5px 10px #192c58;
     padding: 1em;
     margin-bottom: 1em;
-    height: 4em;
+    height: auto;
     display: flex;
     flex-wrap: row wrap;
     align-items: center;
+    justify-content: space-between;
 }
 
 main div {
@@ -91,6 +93,12 @@ h1 {
     font-size: 4em;
     color: #448bca;
     margin-bottom: 10px;
+}
+
+h2 {
+    font-family: "Muro", Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    color: #448bca;
 }
 
 h3 {
@@ -147,13 +155,14 @@ button {
     padding: 15px;
     font-family: "Apercu", sans-serif;
     font-size: medium;
+    margin: 1em;
 }
 
 button a {
     text-decoration: none;
 }
 
-button a:hover {
+button a:hover, button:hover {
     color: white;
 }
 
@@ -165,6 +174,45 @@ button:hover {
 #eligibility ul > li, #FAQs ul > li {
     line-height: 2em;
     color: #192c58;
+}
+
+.trigger {
+    background-color: white;
+    border: solid 2px #192c58;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .trigger:hover {
+    background-color: coral;
+}
+  
+.panel {
+    padding: 1em;
+    background-color: white;
+    border: solid 2px #192c58;
+    display: none;
+    margin-left: 1em;
+    margin-top: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.trigger:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #192c58;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
 }
 
 footer {
@@ -204,6 +252,20 @@ footer a {
     text-decoration: none;
 }
 
+footer.project {
+    width: 100%;
+    font-size: 15px;
+}
+
+footer .project ul > li {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 2em; 
+    justify-content: space-between;
+    width: fit-content;
+}
+
 @media only screen and (min-width:481px) {
   .openbtn {
     display: none;
@@ -231,7 +293,7 @@ footer a {
 
     .sidepanel {
         height: 100%;
-        width: 0; /* 0 width - change this with JavaScript */
+        width: 0;
         position: fixed;
         z-index: 0; 
         top: 0;
@@ -331,7 +393,7 @@ footer a {
         align-items: center;
     }
 
-    footer #class, footer #creators {
+    footer #class, footer #creators, footer .project {
         font-size: 14px;
         height: max-content;
         margin: 0 0 2em 0;
