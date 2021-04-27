@@ -6,3 +6,5 @@
     function closeNav() {
     document.getElementById("sidepanel").style.width = "0";
     }
+
+    new Accordion(".accordion-container");
