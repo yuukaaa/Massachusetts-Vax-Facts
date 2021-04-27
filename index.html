@@ -8,6 +8,8 @@
     <title>Massachusetts Vax Facts</title>
     <link href="//db.onlinewebfonts.com/c/9dc05d7f8e2ef50502fce661077085b5?family=Muro" rel="stylesheet" type="text/css"/>
     <link href="//db.onlinewebfonts.com/c/0a086e32e41c5e5960b26626757f07f3?family=Apercu" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.1.1/dist/accordion.min.css">
+    <script> src="https://unpkg.com/accordion-js@3.1.1/dist/accordion.min.js"</script>
 </head>
 <header>
     <figure class="logo">
@@ -122,35 +124,75 @@
         <div id="myths">
             <h1>Vaccine Myths</h1>
             <h3>Misconceptions of the effectiveness/safety of the vaccines</h3>
-            <h4>The vaccines shouldn't be trusted and aren't safe. They were rapidly developed and tested.</h4>
-            <p> <strong>FALSE:</strong> Yes, the vaccines have indeed developed quickly. But, this is because the outbreak of COVID-19 was an emergency.
-            Therefore, a quick and urgent response/action was necessary. Additionally, manufacturers and researchers were already in the developmental stages of the vaccine.
-            This granted them the capability to have a head-start on the process, making the roll-out quick.
-            </p>
-            <h4>I already had COVID-19, so I don't need the vaccine.</h4>
-            <p> <strong>FALSE:</strong> There is not enough information on how long a body can protect itself from getting the virus again after being infected by COVID-19. This refers to natural immunity.
-            </p>
-            <h4>There are extremely dangerous side effects from the vaccine. One of them includes death.</h4>
-            <p> <strong>FALSE:</strong> The vaccine causes short-term mild to moderate reactions. Some side effects include headaches, chills, fatigue, and sometimes flu.
-                The side effects typically resolve on their own without complications or injury and take a few days to disappear.
-                Experts at <a href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/coronavirus/covid-19-vaccines-myth-versus-fact">John Hopkins Medicine</a> recommend carrying your EpiPen to your appointment if you have severe allergies. If you have further concerns, consult with your doctor to assess possible risks so that you can receive your vaccination safely.
-            </p>
-            <h4>More people will die from the vaccine than they will from the virus itself.</h4>
-            <p> <strong>FALSE: </strong> According to <a href="https://www.mayoclinichealthsystem.org/hometown-health/featured-topic/covid-19-vaccine-myths-debunked">Mayo Clinic</a>, this claim circulated throughout social media.
-                The mortality rate of COVID-19 is between 1-2%. People should still get vaccinated even if the survival rate is high. We should take into consideration others who are vulnerable to the virus rather than just the survival rates.
-            </p>
-            <h4>The COVID vaccines will cause infertility and miscarriage.</h4>
-            <p> <strong>FALSE:</strong> As stated by Mayo Clinic, this is another piece of misinformation that spreads online. 
-                The claim believes that the antibodies of the spike protein from COVID-19 produced from the vaccines would bind with the placental proteins.
-                The supposed bind would then prevent pregnancy. There is no concrete evidence that supports this.
-            </p>
-            <h4>I can get sick with COVID from the vaccines.</h4>
-            <p> <strong>FALSE:</strong> According to the  <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/facts.html">Centers for Disease Control and Protection</a>, the vaccines don’t contain the live virus.
-                Therefore, you can’t get sick with COVID-19. You may encounter some side effects that were mentioned above.
-                This is completely normal. Side effects are a good sign because it means that your body is establishing a foundation to protect you against the virus. Building immunity (protection against the virus) takes about 2-3 weeks after complete vaccination. Being fully vaccinated is defined as 2 shots of either Moderna or Pfizer or 1 shot of Janssen.
-            </p>
+        <div class="accordion-container">
+            <div class="ac">
+                <h2 class="ac-header">
+                    <button class="ac-trigger">The vaccines shouldn't be trusted and aren't safe. They were rapidly developed and tested.</button>
+                </h2>
+                <div class="ac-panel">
+                    <p class="ac-text"> <strong>FALSE:</strong> Yes, the vaccines have indeed developed quickly. But, this is because the outbreak of COVID-19 was an emergency.
+                        Therefore, a quick and urgent response/action was necessary. Additionally, manufacturers and researchers were already in the developmental stages of the vaccine.
+                        This granted them the capability to have a head-start on the process, making the roll-out quick.
+                        </p>
+                </div>
+            </div>
+        
+            <div class="ac">
+                <h2 class="ac-header">
+                    <button class="ac-trigger">I already had COVID-19, so I don't need the vaccine.</button>
+                </h2>
+                <div class="ac-panel">
+                    <p class="ac-text"><strong>FALSE:</strong> There is not enough information on how long a body can protect itself from getting the virus again after being infected by COVID-19. This refers to natural immunity.</p>
+                </div>
+            </div>
+        
+            <div class="ac">
+                <h2 class="ac-header">
+                    <button class="ac-trigger">The vaccine doesn't cause dangerous side effects such as death.</button>
+                </h2>
+                <div class="ac-panel">
+                    <p class="ac-text"><strong>TRUE:</strong> The vaccine causes short-term mild to moderate reactions. Some side effects include headaches, chills, fatigue, and sometimes flu.
+                        The side effects typically resolve on their own without complications or injury and take a few days to disappear.
+                        Experts at <a href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/coronavirus/covid-19-vaccines-myth-versus-fact">John Hopkins Medicine</a> recommend carrying your EpiPen to your appointment if you have severe allergies. If you have further concerns, consult with your doctor to assess possible risks so that you can receive your vaccination safely.</p>
+                </div>
+            </div>
         </div>
-       
+        <div class="accordion-container">
+            <div class="ac">
+                <h2 class="ac-header">
+                    <button class="ac-trigger">More people will die from the vaccine than they will from the virus itself.</button>
+                </h2>
+                <div class="ac-panel">
+                    <p class="ac-text"><strong>FALSE: </strong> According to <a href="https://www.mayoclinichealthsystem.org/hometown-health/featured-topic/covid-19-vaccine-myths-debunked">Mayo Clinic</a>, this claim circulated throughout social media.
+                        The mortality rate of COVID-19 is between 1-2%. People should still get vaccinated even if the survival rate is high. We should take into consideration others who are vulnerable to the virus rather than just the survival rates.
+                    </p>
+                </div>
+            </div>
+        
+            <div class="ac">
+                <h2 class="ac-header">
+                    <button class="ac-trigger">The COVID vaccines will cause infertility and miscarriage.</button>
+                </h2>
+                <div class="ac-panel">
+                    <p class="ac-text">FALSE:</strong> As stated by Mayo Clinic, this is another piece of misinformation that spreads online. 
+                        The claim believes that the antibodies of the spike protein from COVID-19 produced from the vaccines would bind with the placental proteins.
+                        The supposed bind would then prevent pregnancy. There is no concrete evidence that supports this.
+                    </p>
+                </div>
+            </div>
+        
+            <div class="ac">
+                <h2 class="ac-header">
+                    <button class="ac-trigger">The vaccine won't cause me to get sick with COVID-19.</button>
+                </h2>
+                <div class="ac-panel">
+                    <p class="ac-text"><strong>TRUE:</strong> According to the  <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/facts.html">Centers for Disease Control and Protection</a>, the vaccines don’t contain the live virus.
+                        Therefore, you can’t get sick with COVID-19. You may encounter some side effects that were mentioned above.
+                        This is completely normal. Side effects are a good sign because it means that your body is establishing a foundation to protect you against the virus. Building immunity (protection against the virus) takes about 2-3 weeks after complete vaccination. Being fully vaccinated is defined as 2 shots of either Moderna or Pfizer or 1 shot of Janssen.
+                    </p>
+                </div>
+            </div>
+        </div>
 
         <div id="FAQs">
             <h1>FAQs</h1>
