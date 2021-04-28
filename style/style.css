@@ -228,7 +228,7 @@ footer div {
     box-shadow: 5px 10px #192c58;
     padding: 5px;
     margin-bottom: 3em;
-    height: 3em;
+    height: auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -236,13 +236,13 @@ footer div {
     align-content: center;
 }
 
-footer #class {
+footer .course {
     float: left;
     width: 40%;
     font-size: 15px;
 }
 
-footer #creators {
+footer .creators {
     float: right;
     width: 40%;
     font-size: 15px;
@@ -252,18 +252,22 @@ footer a {
     text-decoration: none;
 }
 
-footer.project {
+footer a:hover {
+    color: white;
+}
+
+footer .project {
     width: 100%;
     font-size: 15px;
 }
 
 footer .project ul > li {
     list-style: none;
-    display: flex;
-    flex-flow: row wrap;
-    margin-top: 2em; 
-    justify-content: space-between;
+    display: inline-block;
     width: fit-content;
+    overflow: hidden;
+    padding: 1em;
+    align-content: center;
 }
 
 @media only screen and (min-width:481px) {
@@ -391,9 +395,6 @@ footer .project ul > li {
         margin: 0;
         justify-content: space-between;
         align-items: center;
-    }
-
-    footer #class, footer #creators, footer .project {
         font-size: 14px;
         height: max-content;
         margin: 0 0 2em 0;
