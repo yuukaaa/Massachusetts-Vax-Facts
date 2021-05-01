@@ -12,17 +12,18 @@
     <script> src="https://unpkg.com/accordion-js@3.1.1/dist/accordion.min.js"</script>
 </head>
 <header>
-    <figure class="logo">
-        <img src="images/vaxlogo-05.png" width="50%" height="50%" alt="Massachusetts Vax Info logo">
+    <figure>
+        <a href="#siteinfo"><img src="images/vaxlogo-05.png" class="logo" alt="Massachusetts Vax Info logo"></a>
     </figure>
-    <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
-    <nav id="sidepanel" class="sidepanel" aria-label="Main menu">
+    <button class="openbtn" id="openbtn" onclick="openNav()">&#9776; Menu</button>
+    <nav id="sidepanel" aria-label="Main menu">
         <ul class="menu-items">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="javascript:void(0)" id="closebtn" class="closebtn" onclick="closeNav()">&times;</a>
             <li><a href="#vaccines">COVID-19 Vaccines</a></li>
             <li><a href="#eligibility">Eligibility</a></li>
             <li><a href="#myths">Myths</a></li>
             <li><a href="#FAQs">FAQs</a></li>
+            <li><strong>MORE RESOURCES:</strong></li>
             <li><a href="https://www.mass.gov/info-details/covid-19-updates-and-information">mass.gov</a></li>
             <li><a href="https://www.cdc.gov/">Centers for Disease Control and Prevention</a></li>
             <li><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">World Health Organization</a></li>
@@ -45,10 +46,10 @@
             on the use and distribution of the Johnson & Johnson vaccine. The sudden halt is due to six recipients (*15 J&J vaccine recipients as of April 26th, 2021) developing a rare blood clotting disorder.</p>
             <p><strong>On April 23rd, 2021:</strong> the FDA and CDC has <a href="https://apnews.com/article/health-science-business-europe-coronavirus-vaccine-839bf6a7c857b25df04078402b4d7b8a">resumed</a> the distribution and use of Johnson & Johnson's Janssen vaccine for all adults in the U.S., and "the small [blood] clot risk could be handled with warnings to help younger women decide if they should use that shot or an alternative." </p>
 
-            <p class="table">Additional information:</p>
+            <caption class="table">Additional vaccine information:</caption>
             <table style="width:100%">
                 <tr>
-                    <td id="vaxname"><a href="https://www.pfizer.com/news/hot-topics/the_facts_about_pfizer_and_biontech_s_covid_19_vaccine" alt="Pfizer">Pfizer</td>
+                    <td class="vaxname"><a href="https://www.pfizer.com/news/hot-topics/the_facts_about_pfizer_and_biontech_s_covid_19_vaccine" alt="Pfizer">Pfizer</a></td>
                     <td><ul class="vaxinfo">
                         <li>Official name: BNT16b2</li>
                         <li>Manufacturer: Pfizer, Inc., and BioNTech</li>
@@ -60,7 +61,7 @@
                     </ul></td>
                 </tr>
                 <tr>
-                    <td id="vaxname"><a href="https://www.modernatx.com/covid19vaccine-eua/recipients/moderna-vaccine" alt="Moderna">Moderna</td>
+                    <td class="vaxname"><a href="https://www.modernatx.com/covid19vaccine-eua/recipients/moderna-vaccine" alt="Moderna">Moderna</a></td>
                     <td><ul class="vaxinfo">
                         <li>Official name: mRNA-1237</li>
                         <li>Manufacturer: ModernaTX, Inc.</li>
@@ -72,7 +73,7 @@
                     </ul></td>
                 </tr>
                 <tr>
-                    <td id="vaxname"><a href="https://www.jnj.com/johnson-johnson-covid-19-vaccine-authorized-by-u-s-fda-for-emergency-usefirst-single-shot-vaccine-in-fight-against-global-pandemic" alt="Johnson & Johnson">Johnson & Johnson (Janssen)</td>
+                    <td class="vaxname"><a href="https://www.jnj.com/johnson-johnson-covid-19-vaccine-authorized-by-u-s-fda-for-emergency-usefirst-single-shot-vaccine-in-fight-against-global-pandemic" alt="Johnson & Johnson">Johnson &Johnson (Janssen)</a></td>
                     <td><ul class="vaxinfo">
                         <li>Official name: JNJ-78436735</li>
                         <li>Manufacturer: Janssen Pharmaceuticals Companies of Johnson & Johnson</li>
@@ -97,7 +98,7 @@
                 <li>People who are 16 and older who live, work, or study in Massachusetts</li>
             </ul>
             <p>If you are under 18 years of age, you can only get the Pfizer vaccine and must provide written consent along with a legally authorized representative. Visit <a href="https://www.mass.gov/info-details/covid-19-vaccinations-for-people-under-age-18">mass.gov</a> for more details.</p>
-            <button><a href="https://www.mass.gov/lists/ma-consent-and-screening-forms-for-people-under-18-years-of-age">Download consent form</a></button>
+            <a href="https://www.mass.gov/lists/ma-consent-and-screening-forms-for-people-under-18-years-of-age" class="button">Download consent form</a>
 
             <h3>Vaccination Locations in MA</h3>
             <p>Massachusetts has seven mass vaccination sites throughout the state. The mass sites include:</p>
@@ -112,8 +113,8 @@
                 </ul>
             <p>Mass vaccination sites are high volume, large venue sites that offer the most appointments. Because of its high demand, you must preregister for an appointment to receive the vaccination.
             You will then be contacted via call, text, or email when it's your turn to schedule an appointment. </p>
-            <button><a href="https://vaccinesignup.mass.gov/#/" alt="Preregistration Form for Massachusetts COVID-19 Vaccines">
-            Click here to preregister</a></button>
+            <a href="https://vaccinesignup.mass.gov/#/" alt="Preregistration Form for Massachusetts COVID-19 Vaccines" class="button">
+            Click here to preregister</a>
             <p>If you don't want to go through the process of preregistering at a mass vaccination site, Massachusetts is also offering vaccinations at pharmacies, health care providers, and other community locations.</p>
             <p>Since these sites aren't in such high demand compared to mass locations, there are fewer appointments.
             The upside is that the availability of appointments is updated daily.</p>
